@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const data = [
+{ week: 1, hours: 17 }, { week: 3, hours: 44 }, { week: 2, hours: 7 }, { week: 6, hours: 40 }, { week: 5, hours: 12 },
+];
+    
+function fillArray(arr){
+data2 =arr.sort(function(a, b) {
+    return parseFloat(a.week) - parseFloat(b.week);
+});
+out = [];
+for(i = 0; i<data2.length; i++){
+	obj = data2[i];
+  if((data2[i]).week -1 > i){
+  	for(k=1; k<(data2[i]).week -i; k++){
+    	out.push(0);
+    }
+  }
+  out.push((data2[i]).hours);
+}
+console.log(out)
+;
+}
+fillArray(data);
+    </script>
+    
+</body>
+</html>
