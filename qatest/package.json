@@ -1,0 +1,15 @@
+{
+  "name": "qatest",
+  "version": "1.0.0",
+  "description": "testing integrity of db",
+  "main": "nelo.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Nelo Edhughoro",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.0"
+  }
+}
